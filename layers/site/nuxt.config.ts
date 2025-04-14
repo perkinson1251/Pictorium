@@ -1,5 +1,5 @@
 export default defineNuxtConfig({
   dir: {
-    public: 'public',
+    public: "public",
   },
-})
+});
