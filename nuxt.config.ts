@@ -16,9 +16,9 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "@nuxt/image",
     "@vueuse/nuxt",
-    // "@nuxtjs/supabase",
     "@nuxtjs/color-mode",
     "shadcn-nuxt",
+    "nuxt-appwrite",
   ],
   vite: {
     plugins: [
@@ -36,4 +36,9 @@ export default defineNuxtConfig({
     classSuffix: '',
     storageKey: 'nuxt-color-mode',
   },
+  appwrite: {
+    endpoint: process.env.NUXT_PUBLIC_APPWRITE_ENDPOINT,
+    project: process.env.NUXT_PUBLIC_APPWRITE_PROJECT,
+    locale: process.env.NUXT_PUBLIC_APPWRITE_LOCALE
+  }
 });
